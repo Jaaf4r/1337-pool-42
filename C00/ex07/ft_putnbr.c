@@ -25,3 +25,17 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nbr % 10);
 	}
 }
+/*
+int	main(void)
+{
+	ft_putnbr(1337);
+	ft_putchar('\n');
+	ft_putnbr(-2147483648);
+	ft_putchar('\n');
+	ft_putnbr(42);
+	ft_putchar('\n');
+	ft_putnbr(2147483647);
+	ft_putchar('\n');
+	ft_putnbr(7);
+	ft_putchar('\n');
+}*/
