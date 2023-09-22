@@ -12,7 +12,7 @@ int	ft_str_is_numeric(char *str)
 	}
 	return (1);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -24,4 +24,4 @@ int	main(void)
 	printf("it should print 1 | %d\n", ft_str_is_numeric(x));
 	printf("it should print 0 | %d\n", ft_str_is_numeric(y));
 	printf("it should print 1 | %d\n", ft_str_is_numeric(z));
-}
+}*/
