@@ -11,4 +11,16 @@ int	ft_str_is_printable(char *str)
 	}
 	return (1);
 }
+/*
+#include <stdio.h>
 
+int	main(void)
+{
+	char	x[]="abCdEF123!@#$%./?";
+	char	y[]="\n\t\v\f";
+	char	z[]="";
+
+	printf("it should print 1 | %d\n", ft_str_is_printable(x));
+	printf("it should print 0 | %d\n", ft_str_is_printable(y));
+	printf("it should print 1 | %d\n", ft_str_is_printable(z));
+}*/
