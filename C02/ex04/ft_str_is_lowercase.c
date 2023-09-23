@@ -17,8 +17,8 @@ int	ft_str_is_lowercase(char *str)
 int	main(void)
 {
 	int	i = 0;
-	char	x[]="abcdefjh";
-	char	y[]="abcdEfjh";
+	char	x[]="abcdefgh";
+	char	y[]="abcdEfgh";
 	char	z[]="";
 
 	printf("it should print 1 | %d\n", ft_str_is_lowercase(x));
