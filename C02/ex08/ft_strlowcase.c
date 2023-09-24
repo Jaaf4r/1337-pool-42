@@ -11,7 +11,7 @@ char	*ft_strlowcase(char *str)
 	}
 	return (str);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -21,4 +21,4 @@ int	main(void)
 
 	printf("%s\n", ft_strlowcase(x));
 	printf("%s\n", ft_strlowcase(y));
-}
+}*/
