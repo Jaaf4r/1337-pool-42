@@ -26,7 +26,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 	return (x);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -35,4 +35,4 @@ int	main(void)
 	char	src[]="enemies";
 
 	printf("%d | %s\n", ft_strlcpy(dest, src, 6), dest);
-}
+}*/
