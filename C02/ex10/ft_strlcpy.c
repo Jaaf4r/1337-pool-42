@@ -17,7 +17,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	x = ft_strlen(src);
 	if (size)
 	{
-		while (size && i < size -1)
+		while (src[i] && i < size)
 		{
 			dest[i] = src[i];
 			i++;
@@ -31,8 +31,8 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 
 int	main(void)
 {
-	char	dest[]="idk what";
-	char	src[]="to write xd";
+	char	dest[]="no enemies";
+	char	src[]="enemies";
 
 	printf("%d | %s\n", ft_strlcpy(dest, src, 6), dest);
 }
