@@ -27,4 +27,12 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	return (x);
 }
 
+#include <stdio.h>
 
+int	main(void)
+{
+	char	dest[]="idk what";
+	char	src[]="to write xd";
+
+	printf("%d | %s\n", ft_strlcpy(dest, src, 6), dest);
+}
