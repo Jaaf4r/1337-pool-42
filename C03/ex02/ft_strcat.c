@@ -16,7 +16,7 @@ char	*ft_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -25,4 +25,4 @@ int	main(void)
 	char	y[]="world!";
 
 	printf("%s\n", ft_strcat(x, y));
-}
+}*/
