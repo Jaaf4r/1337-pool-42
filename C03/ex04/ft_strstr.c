@@ -18,10 +18,10 @@ char	*ft_strstr(char *str, char *to_find)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
 	printf("%s\n", ft_strstr("Hello world!", "o "));
-}
+}*/
