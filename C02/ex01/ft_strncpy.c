@@ -1,19 +1,18 @@
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
-	unsigned int	j;
 
 	i = 0;
-	while (dest[i])
-		i++;
-	j = 0;
-	while (src[j] && i < n)
+	while (src[i] && i < n)
 	{
-		dest[i] = src[j];
+		dest[i] = src[i];
 		i++;
-		j++;
 	}
-	dest[i] = '\0';
+	if (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
 /*
@@ -24,5 +23,5 @@ int	main(void)
 	char	x[]="I have ";
 	char	y[]="no enemies!";
 
-	printf("%s\n", ft_strncpy(x, y, 18));
+	printf("%s\n", ft_strncpy(x, y, 3));
 }*/

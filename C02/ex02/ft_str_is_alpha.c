@@ -16,7 +16,7 @@ int	ft_str_is_alpha(char *str)
 
 int	main(void)
 {
-	char	w[]="123/*?.,";
+	char	w[]="123.,";
 	char	x[]="abcdefjh";
 	char	y[]="abcd0fjh";
 	char	z[]="";

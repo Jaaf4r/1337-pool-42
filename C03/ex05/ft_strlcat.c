@@ -23,7 +23,9 @@ char	ft_strlcat(char *dest, char *src, unsigned int size)
 	srclen = ft_strlen(src);
 	if (size < destlen)
 		return (size + srclen);
-	while (src[j] && j < size - destlen - 1)
+	if (size == destlen)
+		return (destlen + srclen);
+	while (src[j] && j < size)
 	{
 		dest[i] = src[j];
 		i++;
@@ -32,7 +34,7 @@ char	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest[i] = '\0';
 	return (destlen + srclen);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -41,4 +43,4 @@ int	main(void)
 	char	src[]="world!";
 
 	printf("The new string is %s | Its full length is %d\n",dest , ft_strlcat(dest, src, 4));
-}
+}*/
