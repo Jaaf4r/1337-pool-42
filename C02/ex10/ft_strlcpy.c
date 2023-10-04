@@ -11,28 +11,28 @@ int	ft_strlen(char *str)
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
-	unsigned int	x;
+	unsigned int	j;
 
 	i = 0;
-	x = ft_strlen(src);
+	j = ft_strlen(src);
 	if (size)
 	{
-		while (src[i] && i < size)
+		while (src[i] && i < size - 1)
 		{
 			dest[i] = src[i];
 			i++;
 		}
 		dest[i] = '\0';
 	}
-	return (x);
+	return (j);
 }
 /*
 #include <stdio.h>
 
 int	main(void)
 {
-	char	dest[]="no enemies";
-	char	src[]="enemies";
+	char	dest[]="I have ";
+	char	src[]="no enemies";
 
 	printf("%d | %s\n", ft_strlcpy(dest, src, 6), dest);
 }*/
