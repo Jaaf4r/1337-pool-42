@@ -25,7 +25,7 @@ void	ft_sort_int_tab(int *tab, int size)
 int	main(void)
 {
 	int	tab[] = {77,45,34,22,5,7,99};
-	int	size = 7;
+	int	size = sizeof(tab) / sizeof(tab[0]);
 	int	i = 0;
 
 	ft_sort_int_tab(tab, size);
