@@ -6,10 +6,10 @@ int	ft_fibonacci(int index)
 		return (index);
 	return (ft_fibonacci(index - 2) + ft_fibonacci(index - 1));
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
 	printf("%d\n", ft_fibonacci(10));
-}
+}*/
