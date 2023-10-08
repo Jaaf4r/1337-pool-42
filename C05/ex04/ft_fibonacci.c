@@ -6,7 +6,7 @@ int	ft_fibonacci(int index)
 		return (index);
 	return (ft_fibonacci(index - 2) + ft_fibonacci(index - 1));
 }
-i/*
+/*
 #include <stdio.h>
 
 int	main(void)
