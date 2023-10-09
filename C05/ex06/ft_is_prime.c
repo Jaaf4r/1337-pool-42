@@ -3,14 +3,13 @@ int	ft_is_prime(int nb)
 	int	i;
 
 	i = 2;
-	if (nb <= 1)
+	if (nb < 2)
 		return (0);
-	while (i <= (nb / 2))
+	while (i <= nb / i)
 	{
-		if (!(nb % i))
+		if (nb % i == 0)
 			return (0);
-		else
-			i += 1;
+		i++;
 	}
 	return (1);
 }
