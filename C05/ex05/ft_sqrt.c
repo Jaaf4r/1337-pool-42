@@ -20,10 +20,10 @@ int	ft_sqrt(int nb)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
 	printf("sqrt of %d is %d\n", 1, ft_sqrt(1));
-}
+}*/
