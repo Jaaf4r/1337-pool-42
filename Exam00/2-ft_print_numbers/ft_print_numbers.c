@@ -11,7 +11,3 @@ void	ft_print_numbers(void)
 		num++;
 	}
 }
-
-int	main() {
-	ft_print_numbers();
-}
