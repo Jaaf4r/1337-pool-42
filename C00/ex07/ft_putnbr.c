@@ -7,23 +7,21 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	unsigned int	nbr;
+	long	nbr;
 	
 	nbr = nb;
-	if (nb < 0)
+	if (nbr < 0)
 	{
 		ft_putchar('-');
 		nbr *= -1;
 	}
-	if (nbr < 10)
-	{
-		ft_putchar(nbr + '0');
-	}
-	else
+	if (nbr > 9)
 	{
 		ft_putnbr(nbr / 10);
 		ft_putnbr(nbr % 10);
 	}
+	else
+		ft_putchar(nbr + '0');
 }
 /*
 int	main(void)
